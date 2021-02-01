@@ -22,6 +22,12 @@ class Circle implements Shape {
   num get area => pi * pow(radius, 2);
 }
 
+class CircleMock implements Circle {
+
+ num area;
+  num radius;
+}
+
 class Square implements Shape {
   final num side;
   Square(this.side);
