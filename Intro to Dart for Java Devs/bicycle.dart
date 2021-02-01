@@ -1,13 +1,14 @@
 class Bicycle {
   int cadence;
-  int speed;
+  int _speed=0;
   int gear;
-  Bicycle(this.cadence, this.speed, this.gear);
+  int get speed => _speed;
+  Bicycle(this.cadence,this.gear);
   @override
-  String toString()=>'Bicycle:$speed mph';
+  String toString()=>'Bicycle:$_speed mph';
 }
 
 void main() {
-  var bike = Bicycle(2, 0, 1);
+  var bike = Bicycle(2, 1);
   print(bike);
 }
